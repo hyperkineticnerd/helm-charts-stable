@@ -4,3 +4,5 @@
 
 * Minecraft
 * OLM Operator
+* Satisfactory
+* Valheim
