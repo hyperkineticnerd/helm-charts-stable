@@ -1,5 +1,27 @@
 apiVersion: v1
 entries:
+  jellyfin:
+  - apiVersion: v2
+    appVersion: 10.9.9
+    created: "2024-10-06T20:05:42.077158545Z"
+    description: Installs Jellyfin Media Server on Kubernetes
+    digest: 949fabdc46e7d3bcb282efbd16be0d56bf389b79fd11de85c3f031430070ee6c
+    name: jellyfin
+    type: application
+    urls:
+    - https://github.com/hyperkineticnerd/helm-charts-stable/releases/download/jellyfin-1.0.0/jellyfin-1.0.0.tgz
+    version: 1.0.0
+  jellyseerr:
+  - apiVersion: v2
+    appVersion: 1.9.0
+    created: "2024-10-06T20:05:42.206950689Z"
+    description: Installs JellySeerr on Kubernetes
+    digest: efb93cd279306db9a53434ece70c7282fe9fd4062633937740788032b3663439
+    name: jellyseerr
+    type: application
+    urls:
+    - https://github.com/hyperkineticnerd/helm-charts-stable/releases/download/jellyseerr-1.0.0/jellyseerr-1.0.0.tgz
+    version: 1.0.0
   minecraft:
   - apiVersion: v2
     appVersion: 1.20.0
@@ -22,4 +44,15 @@ entries:
     urls:
     - https://github.com/hyperkineticnerd/helm-charts-stable/releases/download/olm-operator-1.0.1/olm-operator-1.0.1.tgz
     version: 1.0.1
-generated: "2024-09-25T05:03:54.483656866Z"
+  satisfactory:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-10-06T20:05:42.302103939Z"
+    description: A Helm chart for Kubernetes
+    digest: 4775133cd4afbf1f0d2de2d2653aa72adeccbf94cceb590c202d1e3de70c5e35
+    name: satisfactory
+    type: application
+    urls:
+    - https://github.com/hyperkineticnerd/helm-charts-stable/releases/download/satisfactory-1.0.0/satisfactory-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-10-06T20:05:42.302114509Z"
