@@ -45,6 +45,20 @@ spec:
               containerPort: 8096
             - name: https
               containerPort: 8920
+            - name: dlna
+              containerPort: 1900
+              protocol: UDP
+            - name: client
+              containerPort: 7359
+              protocol: UDP
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: http
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: http
           volumeMounts:
             - name: media
               mountPath: /media

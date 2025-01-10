@@ -20,3 +20,11 @@ spec:
     protocol: TCP
     port: 8920
     targetPort: 8920
+  - name: dlna
+    protocol: UDP
+    port: 1900
+    targetPort: 1900
+  - name: client
+    protocol: UDP
+    port: 7359
+    targetPort: 7359
