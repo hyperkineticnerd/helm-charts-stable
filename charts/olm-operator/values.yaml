@@ -8,3 +8,5 @@ name: my-operator
 namespace: my-operator-namespace
 source: my-operator-index
 sourceNamespace: olm
+additionalNamespaces: # []
+  - my-managed-namespace
