@@ -33,13 +33,6 @@ spec:
           envFrom:
             - secretRef:
                 name: {{ .Release.Name }}-env
-          resources:
-            limits:
-              cpu: 6000m
-              memory: 8Gi
-            requests:
-              cpu: 4000m
-              memory: 4Gi
           ports:
             - name: http
               containerPort: 8096
@@ -51,14 +44,14 @@ spec:
             - name: client
               containerPort: 7359
               protocol: UDP
-          readinessProbe:
-            httpGet:
-              path: /health
-              port: http
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
           livenessProbe:
-            httpGet:
-              path: /health
-              port: http
+            {{- toYaml .Values.livenessProbe | nindent 12 }}
+          readinessProbe:
+            {{- toYaml .Values.readinessProbe | nindent 12 }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
             - name: media
               mountPath: /media
@@ -66,13 +59,6 @@ spec:
               mountPath: /config
             - name: cache
               mountPath: /cache
-          securityContext:
-            allowPrivilegeEscalation: false
-            runAsNonRoot: true
-            capabilities:
-              drop: ["ALL"]
-            seccompProfile:
-              type: RuntimeDefault
       volumes:
       - name: media
         persistentVolumeClaim:
