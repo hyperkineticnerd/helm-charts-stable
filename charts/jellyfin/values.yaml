@@ -136,6 +136,20 @@ persistentVolumeClaims:
     storageSize: 5Ti
     storageClassName: ""
     existingVolumeName: ""
+  movies:
+    enabled: true
+    accessModes:
+      - ReadWriteOnce
+    storageSize: 5Ti
+    storageClassName: ""
+    existingVolumeName: ""
+  tv:
+    enabled: true
+    accessModes:
+      - ReadWriteOnce
+    storageSize: 5Ti
+    storageClassName: ""
+    existingVolumeName: ""
   config:
     enabled: true
     accessModes:
