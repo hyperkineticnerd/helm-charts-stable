@@ -3,6 +3,16 @@ entries:
   jellyfin:
   - apiVersion: v2
     appVersion: 10.9.9
+    created: "2025-03-19T02:06:21.275254067Z"
+    description: Installs Jellyfin Media Server on Kubernetes
+    digest: 56eaf6187b99466e155520fdc63f8b0bb987f47e2a2b7bc5ee508756ba99264e
+    name: jellyfin
+    type: application
+    urls:
+    - https://github.com/hyperkineticnerd/helm-charts-stable/releases/download/jellyfin-1.2.0/jellyfin-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
+    appVersion: 10.9.9
     created: "2025-03-11T22:36:05.216436021Z"
     description: Installs Jellyfin Media Server on Kubernetes
     digest: 9c62a5b5b930f51ebd3cd9f6a407c382c2b92f866ebfa1bc2ed346fafc0507e1
@@ -125,4 +135,4 @@ entries:
     urls:
     - https://github.com/hyperkineticnerd/helm-charts-stable/releases/download/satisfactory-1.0.0/satisfactory-1.0.0.tgz
     version: 1.0.0
-generated: "2025-03-11T22:36:05.216463662Z"
+generated: "2025-03-19T02:06:21.275291828Z"
