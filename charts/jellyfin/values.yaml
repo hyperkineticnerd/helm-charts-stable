@@ -130,7 +130,7 @@ affinity: {}
 
 persistentVolumeClaims:
   media:
-    enabled: true
+    enabled: false
     accessModes:
       - ReadWriteOnce
     storageSize: 5Ti
